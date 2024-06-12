@@ -1,15 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--estilos-->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!--fuentes-->
+
+
+    <!--titulo-->
+    <title> Fedex Store </title>
+
 </head>
+
 <body>
-    <h1> Compra de videojuegos </h1>
+    <!-- Inicio navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand ms-5" href="#">
+                <img class="logo" src="Multimedia/logo.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Barra de búsqueda -->
+            <form class="d-flex ms-5 me-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar en la tienda" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+
+            <span class="navbar-spacer"></span>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--izquierda -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Descubrir</a>
+                    </li>
+
+                    <span class="navbar-spacer"></span>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/Explorar.html">Explorar</a>
+                    </li>
+
+                    <span class="navbar-spacer"></span>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/Noticias.html">Noticias</a>
+                    </li>
+                </ul>
+
+                <!--derecha -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/Deseos.html">Lista de deseos</a>
+                    </li>
+
+                    <span class="navbar-spacer"></span>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/Carrito.html">Carrito</a>
+                    </li>
+
+                    <div class="navbar-divider"></div>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Amigos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Perfil
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="./pages/Cuenta.html">Cuenta</a></li>
+                            <li><a class="dropdown-item" href="#">Ajustes</a></li>
+                            <li><a class="dropdown-item" href="#">Políticas de privacidad</a></li>
+                            <li><a class="dropdown-item" href="#">Términos de servicio</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin navbar -->
+
+    <!-- Comienzo carrusel -->
+    <div class="carousel-container">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">                       
+                <div class="carousel-item active">
+                    <img class="imagenCarrusel" src="./Multimedia/wukong.jpg" alt="Wukong">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenCarrusel" src="./Multimedia/CallOfDuty.jpg" alt="Call of Duty black ops 6">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenCarrusel" src="./Multimedia/Ghost.jpg" alt="Ghost">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenCarrusel" src="./Multimedia/AgeOfEmpires.jpg" alt="AgeOfEmpires">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenCarrusel" src="./Multimedia/assasinsCreed.jpg" alt="assasinsCreed valhala">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenCarrusel" src="./Multimedia/Diablo.jpg" alt="Diablo">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenCarrusel" src="./Multimedia/TheLastOfUs.jpg" alt="TheLastOfUs part 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenCarrusel" src="./Multimedia/Madison.jpg" alt="Madison">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenCarrusel" src="./Multimedia/GodOfWarRagnarok.jpg" alt="god Of War Ragnarok">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenCarrusel" src="./Multimedia/WarThunder.jpg" alt="War Thunder">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenCarrusel" src="./Multimedia/DragonBall.jpg" alt="Dragon Ball">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenCarrusel" src="./Multimedia/silentHil2.jpg" alt="Silent hill 2">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Fin carrusel -->
+
+    <!-- galería populares inicia -->
+
+    <div class="galeria-container">    
+        <h2 class=" Titulo2 my-4">Populares</h2>
+        <div class="row mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                <img src="./Multimedia/AgeOfEmpires.jpg" class="ImagenesGaleria animacion" alt="Age of Empires">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                <img src="./Multimedia/gta5.jpg" class="ImagenesGaleria animacion" alt="Age of Empires">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                <img src="./Multimedia/DevilMayCry5.jpg" class="ImagenesGaleria animacion" alt="Age of Empires">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                <img src="./Multimedia/EldenRing.jpg" class="ImagenesGaleria animacion" alt="Age of Empires">
+            </div>
+        </div>
+    </div>
+    <!-- galería populares termina -->
+
+    <!--galeria Nuevos lanzamientos inicia-->
+
+    <div class="galeria-container">    
+        <h2 class=" Titulo2 my-4">Nuevos lanzamientos</h2>
+        <div class="row mb-5">
+            <div class="col-lg-3 mb-3">
+                <img src="./Multimedia/Ghost.jpg" class=" ImagenesGaleria animacion" alt="">
+            </div>
+            <div class="col-lg-3 mb-3">
+                <img src="./Multimedia/bodyCam.jpg" class=" ImagenesGaleria animacion" alt="">
+            </div>
+            <div class="col-lg-3 mb-3">
+                <img src="./Multimedia/DarkAndDarker.jpg" class=" ImagenesGaleria animacion" alt="">
+            </div>
+            <div class="col-lg-3 mb-3">
+                <img src="./Multimedia/Soulmaskjpg.jpg" class=" ImagenesGaleria animacion" alt="">
+            </div>
+        </div>
+    </div>
+    <!--galeria Nuevos lanzamientos termina-->
+
+    <!--galeria Juegos gratis inicia-->
+
+    <div class="galeria-container">
+        <h2 class=" Titulo2 my-4">Juegos gratis</h2>
+        <div class="row mb-5">
+            <div class="col-lg-3 mb-3">
+                <img src="./Multimedia/ApexLegends.jpg" class=" ImagenesGaleria animacion" alt="">
+            </div>
+            <div class="col-lg-3 mb-3">
+                <img src="./Multimedia/WarThunder.jpg" class=" ImagenesGaleria animacion" alt="">
+            </div>
+            <div class="col-lg-3 mb-3">
+                <img src="./Multimedia/Warframe.jpg" class=" ImagenesGaleria animacion" alt="">
+            </div>
+            <div class="col-lg-3 mb-3">
+                <img src="./Multimedia/Overwatch.jpg" class=" ImagenesGaleria animacion" alt="">
+            </div>
+        </div>
+    </div>
+    <!--galeria Juegos gratis termina-->
+
+    <!--galeria Proximamente inicia-->
+
+    <div class="galeria-container">
+        <h2 class=" Titulo2  my-4">Proximamente</h2>
+        <div class="row mb-5">
+            <div class="col-lg-3 mb-3">
+                <img src="./Multimedia/wukong.jpg" class=" ImagenesGaleria animacion" alt="">
+            </div>
+            <div class="col-lg-3 mb-3">
+                <img src="./Multimedia/DragonBall.jpg" class=" ImagenesGaleria animacion" alt="">
+            </div>
+            <div class="col-lg-3 mb-3">
+                <img src="./Multimedia/CallOfDuty.jpg" class=" ImagenesGaleria animacion" alt="">
+            </div>
+            <div class="col-lg-3 mb-3">
+                <img src="./Multimedia/GodOfWarRagnarok.jpg" class=" ImagenesGaleria animacion" alt="">
+            </div>
+        </div>
+    </div>
+    <!--galeria Proximamente termina-->
+
+
+
+
 
 
     <script src="Js/index.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
