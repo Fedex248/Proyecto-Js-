@@ -86,8 +86,8 @@
                             Perfil
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">Cuenta</a></li>
-                            <li><a class="dropdown-item" href="./sesion.html">Iniciar sesion</a></li>
+                            <li><a class="dropdown-item" href="./Cuenta.html">Cuenta</a></li>
+                            <li><a class="dropdown-item" href="#">Iniciar sesion</a></li>
                             <li><a class="dropdown-item" href="#">Ajustes</a></li>
                             <li><a class="dropdown-item" href="#">Políticas de privacidad</a></li>
                             <li><a class="dropdown-item" href="#">Términos de servicio</a></li>
@@ -103,57 +103,60 @@
     </nav>
     <!-- Fin navbar -->
 
-<!-- Inicio cuenta -->
-<div class="formulariocontainer mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">
-                    Datos personales de la cuenta
-                </div>
-                <div class="card-body">
-                    <form id="formularioCuenta">
-                        <!-- Campos de entrada -->
-                        <div class="mb-3">
-                            <label for="correo" class="form-label">Correo:</label>
-                            <input type="text" class="form-control" id="correo" name="correo" required>
+    <!-- Inicio registro -->
+    <div class="formulariocontainer">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Registrarse
                         </div>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        <div class="card-body">
+                            <form id="formularioRegistro">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre:</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="apellido" class="form-label">Apellido:</label>
+                                    <input type="text" class="form-control" id="apellido" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="usuario" class="form-label">Nombre de Usuario:</label>
+                                    <input type="text" class="form-control" id="usuario" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo:</label>
+                                    <input type="email" class="form-control" id="correo" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contrasena" class="form-label">Contraseña:</label>
+                                    <input type="password" class="form-control" id="contrasena" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Edad:</label>
+                                    <input type="text" class="form-control" id="edad" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">DNI:</label>
+                                    <input type="text" class="form-control" id="dni" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nacionalidad:</label>
+                                    <input type="text" class="form-control" id="nacionalidad" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Registrarse</button>
+                            </form>
                         </div>
-                        <div class="mb-3">
-                            <label for="apellido" class="form-label">Apellido:</label>
-                            <input type="text" class="form-control" id="apellido" name="apellido" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="usuario" class="form-label">Nombre de usuario:</label>
-                            <input type="text" class="form-control" id="usuario" name="usuario" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="edad" class="form-label">Edad:</label>
-                            <input type="number" class="form-control" id="edad" name="edad" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="dni" class="form-label">DNI:</label>
-                            <input type="text" class="form-control" id="dni" name="dni" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="nacionalidad" class="form-label">Nacionalidad:</label>
-                            <input type="text" class="form-control" id="nacionalidad" name="nacionalidad" required>
-                        </div>
-                        <!-- Botón para actualizar datos -->
-                        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Fin cuenta -->
+    <!-- Fin registro -->
 
-
-<script src="../Js/index.js"></script>
+    <script src="../Js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
