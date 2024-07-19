@@ -8,6 +8,7 @@ $color-texto: rgb(255, 255, 255);
 
 body {
     background-color: $color-fondo;
+
 }
 
 .navbar {
@@ -165,4 +166,56 @@ body {
             }
         }
     }
+
+    // styles.scss
+
+.container {
+    padding: 20px; // Espacio alrededor del contenedor
+}
+
+.row {
+    margin: 0; // Eliminar márgenes predeterminados para ajustar el ancho total
+}
+
+.card-carrito {
+    border: 2px solid #ddd; // Bordes de la tarjeta
+    border-radius: 8px; // Bordes redondeados
+    overflow: hidden; // Para que la imagen no sobresalga de la tarjeta
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra suave
+    transition: transform 0.3s ease; // Transición para efecto hover
+    width: 100%; // Asegura que la tarjeta ocupe todo el ancho disponible
+
+    &:hover {
+        transform: scale(1.05); // Aumenta el tamaño de la tarjeta al pasar el cursor
+    }
+
+    .card-img-top {
+        height: 200px; // Ajusta la altura de la imagen según el diseño
+        object-fit: cover; // Ajusta la imagen para cubrir el contenedor
+    }
+
+    .card-carrito-body {
+        padding: 20px; // Espacio interno en la tarjeta
+    }
+
+    .card-carrito-title {
+        font-size: 1.25rem; // Tamaño de la fuente del título
+    }
+
+    .card-carrito-text {
+        font-size: 1rem; // Tamaño de la fuente del párrafo
+    }
+
+    .btn-primary {
+        background-color: #007bff; // Color de fondo del botón
+        border: none; // Sin borde
+        padding: 10px 20px; // Espacio interno del botón
+        border-radius: 4px; // Bordes redondeados del botón
+
+        &:hover {
+            background-color: #0056b3; // Color de fondo del botón al pasar el cursor
+        }
+    }
+}
+
 }
